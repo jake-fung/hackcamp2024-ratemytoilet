@@ -1,0 +1,48 @@
+.homepage {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 387px;
+  height: 809.81px;
+}
+
+.homepage .tab-bar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 76.39px;
+  padding: 14.07px 4.02px;
+  position: relative;
+  top: 736px;
+  background-color: #ffffff;
+}
+
+.homepage .icon-container {
+  position: relative;
+  width: 75.39px;
+  height: 50.26px;
+}
+
+.homepage .icon {
+  position: relative;
+  width: 22px;
+  height: 24px;
+  top: 11px;
+  left: 26px;
+  background-image: url(./img/shape.svg);
+  background-size: 100% 100%;
+}
+
+.homepage .img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 10px;
+  left: 25px;
+}
+
+.homepage .map {
+  width: 387px;
+  height:736px;
+}
