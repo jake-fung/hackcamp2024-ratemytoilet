@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate The Loo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f7e8c3;
+        }
+        .container {
+            text-align: center;
+            flex: 1;
+            position: relative;
+        }
+        .intro-image {
+            width: 100%;
+            max-width: 400px;
+            margin-top: 20px;
+        }
+        
+        /* Position the clickable START overlay */
+        .start-overlay {
+            position: absolute;
+            bottom: 300px; /* Adjust this value to align with the START position */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%);
+            width: 140px; /* Adjust width to cover START area */
+            height: 50px; /* Adjust height to cover START area */
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: #333333;">Rate The Loo</h1>
+        <img src="Images/Intro.png" alt="Rate The Loo Intro" class="intro-image">
+
+        <!-- Clickable overlay positioned on START area -->
+        <a href="footPrint.html" class="start-overlay"></a>
+    </div>
+</body>
+</html>
