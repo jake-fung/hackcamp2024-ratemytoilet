@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate Toilet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f4f8;
+        }
+        .container {
+            text-align: center;
+            flex: 1;
+            position: relative;
+        }
+        .review-image {
+            width: 100%;
+            max-width: 400px;
+            margin-top: 20px;
+        }
+        /* Position the clickable Home icon */
+        .home-icon-overlay {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+        /* Position the clickable Add (+) icon */
+        .add-icon-overlay {
+            position: absolute;
+            top: 53%;
+            right: 5%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0);
+        }
+        /* Position the clickable Ranking icon */
+        .ranking-icon-overlay {
+            position: absolute;
+            bottom: 20px;
+            left: 180px;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rate Toilet</h1>
+        <img src="Images/Review.png" alt="Review and Rating Page" class="review-image">
+
+        <!-- Clickable overlay positioned on Home icon -->
+        <a href="footprint.html" class="home-icon-overlay"></a>
+
+        <!-- Clickable overlay positioned on Add (+) icon -->
+        <a href="AddRate.html" class="add-icon-overlay"></a>
+
+        <!-- Clickable overlay positioned on Ranking icon -->
+        <a href="ranking.html" class="ranking-icon-overlay"></a>
+    </div>
+</body>
+</html>
