@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Your Rating</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f4f8;
+        }
+        .container {
+            text-align: center;
+            flex: 1;
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+        }
+        .add-rate-image {
+            width: 100%;
+            max-width: 400px;
+            margin-top: 20px;
+            position: relative;
+        }
+        .input-overlay {
+            position: absolute;
+            top: 30%; /* Move inputs lower by adjusting this value */
+            width: 100%;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+            width: 100%;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 60px;
+            resize: vertical;
+        }
+        .submit-button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .submit-button:hover {
+            background-color: #45a049;
+        }
+        /* Position the clickable Home icon */
+        .home-icon-overlay {
+            position: absolute;
+            bottom: 40px; /* Move Home icon lower */
+            left: 20px;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0);
+        }
+        /* Position the clickable Ranking icon */
+        .ranking-icon-overlay {
+            position: absolute;
+            bottom: 40px; /* Move Ranking icon lower */
+            left: 180px;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Add Your Rating</h1>
+        <p>Please enter your rating to the toilet out of 5</p>
+        
+        <!-- Background image for the form -->
+        <img src="Images/AddRate.png" alt="Add Your Rating Page" class="add-rate-image">
+        
+        <!-- Overlaying form on top of the image -->
+        <div class="input-overlay">
+            <form action="submit_rating.py" method="post">
+                <div class="form-group">
+                    <label for="overall-rating">Overall Rating</label>
+                    <input type="text" id="overall-rating" name="overall_rating" placeholder="Enter overall rating (1-5)" required>
+                </div>
+                <div class="form-group">
+                    <label for="cleanliness">Cleanliness</label>
+                    <input type="text" id="cleanliness" name="cleanliness" placeholder="Enter cleanliness rating (1-5)" required>
+                </div>
+                <div class="form-group">
+                    <label for="capacity">Capacity</label>
+                    <input type="text" id="capacity" name="capacity" placeholder="Enter capacity rating (1-5)" required>
+                </div>
+                <div class="form-group">
+                    <label for="accessibility">Accessibility</label>
+                    <input type="text" id="accessibility" name="accessibility" placeholder="Enter accessibility rating (1-5)" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comment</label>
+                    <textarea id="comment" name="comment" placeholder="Enter your comments"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+
+        <!-- Clickable Home icon overlay -->
+        <a href="footprint.html" class="home-icon-overlay"></a>
+
+        <!-- Clickable Ranking icon overlay -->
+        <a href="ranking.html" class="ranking-icon-overlay"></a>
+    </div>
+</body>
+</html>

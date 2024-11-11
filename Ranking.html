@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Toilets in UBC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f4f8;
+        }
+        .container {
+            text-align: center;
+            flex: 1;
+            position: relative;
+        }
+        .ranking-image {
+            width: 100%;
+            max-width: 400px;
+            margin-top: 20px;
+        }
+        
+        /* Position the clickable Home icon */
+        .home-icon-overlay {
+            position: absolute;
+            bottom: 20px; /* Adjust this value to match the icon's position */
+            left: 20px; /* Adjust this value to match the icon's position */
+            width: 30px; /* Adjust width to match the icon's size */
+            height: 30px; /* Adjust height to match the icon's size */
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: #a78bfa;">Top Toilets in UBC</h1>
+        <img src="Images/Ranking.png" alt="Ranking Page" class="ranking-image">
+
+        <!-- Clickable overlay positioned on Home icon -->
+        <a href="footprint.html" class="home-icon-overlay"></a>
+    </div>
+</body>
+</html>

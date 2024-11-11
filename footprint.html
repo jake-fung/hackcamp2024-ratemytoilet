@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+        <!-- Start of new code for Tab Bar CSS -->
+    <style>
+    .tab-bar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #fff;
+        padding: 10px 0;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    .icon-container img {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+    </style>
+<!-- End of new code for Tab Bar CSS -->
+
+<style>
+    #map {
+        position: absolute;
+        top: 0;
+        bottom: 50px; /* Ensures space for the tab bar */
+        right: 0;
+        left: 0;
+        overflow: hidden; /* Prevents scrolling on the map if that's needed */
+    }
+    
+    /* Tab Bar Styling */
+    .tab-bar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #fff;
+        padding: 10px 0;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 1000; /* Ensures tab bar stays on top */
+    }
+    
+    .icon-container img {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+</style>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_28a4e38f6317946f9c785be34ddd1e4d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    <!-- Start of new code for Tab Bar -->
+<div class="tab-bar">
+    <div class="icon-container">
+        <img src="assets/images/home-icon.svg" onclick="window.location.href='footprint.html'" alt="Home Icon"/>
+    </div>
+    <div class="icon-container">
+        <img src="assets/images/ranking-icon.svg" onclick="window.location.href='ranking.html'" alt="Ranking Icon"/>
+    </div>
+    <div class="icon-container">
+        <img src="assets/images/profile-icon.svg" onclick="window.location.href='profile.html'" alt="Profile Icon"/>
+    </div>
+</div>
+<!-- End of new code for Tab Bar -->
+
+    
+    
+            <div class="folium-map" id="map_28a4e38f6317946f9c785be34ddd1e4d" ></div>
+            <!-- Start of new code for Tab Bar -->
+<!-- Start of new code for Tab Bar -->
+<div class="tab-bar">
+    <div class="icon-container">
+        <img src="Images/home-icon.svg" onclick="window.location.href='footprint.html'" alt="Home Icon"/>
+    </div>
+    <div class="icon-container">
+        <img src="Images/ranking-icon.svg" onclick="window.location.href='ranking.html'" alt="Ranking Icon"/>
+    </div>
+    <div class="icon-container">
+        <img src="Images/profile-icon.svg" onclick="window.location.href='profile.html'" alt="Profile Icon"/>
+    </div>
+</div>
+<!-- End of new code for Tab Bar -->
+
+<!-- End of new code for Tab Bar -->
+
+        
+</body>
+<script>
+    
+    
+            var map_28a4e38f6317946f9c785be34ddd1e4d = L.map(
+                "map_28a4e38f6317946f9c785be34ddd1e4d",
+                {
+                    center: [49.2606, -123.246],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1af5e797746fcebefccae874a8a40ac1 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_1af5e797746fcebefccae874a8a40ac1.addTo(map_28a4e38f6317946f9c785be34ddd1e4d);
+
+        
+        
+    
+            var marker_a24dc09f151d7f659a1c498683bf8a35 = L.marker(
+                [49.264469, -123.251339],
+                {}
+            ).addTo(map_28a4e38f6317946f9c785be34ddd1e4d);
+
+            marker_a24dc09f151d7f659a1c498683bf8a35.on('click', function() {
+                window.location.href = 'review.html';
+            });
+        
+    
+            marker_a24dc09f151d7f659a1c498683bf8a35.bindTooltip(
+                `<div>
+                     Biological Sciences Building
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b682dae9fbb96dd7e2a6176ecd5882cc = L.marker(
+                [49.26251, -123.25249],
+                {}
+            ).addTo(map_28a4e38f6317946f9c785be34ddd1e4d);
+        
+    
+            marker_b682dae9fbb96dd7e2a6176ecd5882cc.bindTooltip(
+                `<div>
+                     Buchanan Building
+                 </div>`,
+                {"sticky": true}
+            );
+
+            marker_b682dae9fbb96dd7e2a6176ecd5882cc.on('click', function() {
+                window.location.href = 'review.html';
+            });
+        
+    
+            var marker_76a5e3878887c0f8b41713923559c1a9 = L.marker(
+                [49.266129, -123.251663],
+                {}
+            ).addTo(map_28a4e38f6317946f9c785be34ddd1e4d);
+
+            marker_76a5e3878887c0f8b41713923559c1a9.on('click', function() {
+                window.location.href = 'review.html';
+            });
+        
+        
+    
+            marker_76a5e3878887c0f8b41713923559c1a9.bindTooltip(
+                `<div>
+                     Earth and Ocean Sciences
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e16eb65bb20b82d47e6c9130890cbbab = L.marker(
+                [49.261174, -123.248832],
+                {}
+            ).addTo(map_28a4e38f6317946f9c785be34ddd1e4d);
+        
+    
+            marker_e16eb65bb20b82d47e6c9130890cbbab.bindTooltip(
+                `<div>
+                     Hebb Building
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70dcf1fec373f0a75b5728751ac61947 = L.marker(
+                [49.261174, -123.248832],
+                {}
+            ).addTo(map_28a4e38f6317946f9c785be34ddd1e4d);
+
+            marker_70dcf1fec373f0a75b5728751ac61947.on('click', function() {
+                window.location.href = 'review.html';
+            });
+        
+    
+            marker_70dcf1fec373f0a75b5728751ac61947.bindTooltip(
+                `<div>
+                     Institute for Computing Information and Cognitive Systems / Computer Science
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc08e65620b752759b868428d56a53da = L.marker(
+                [49.267595, -123.252738],
+                {}
+            ).addTo(map_28a4e38f6317946f9c785be34ddd1e4d);
+
+            marker_fc08e65620b752759b868428d56a53da.on('click', function() {
+                window.location.href = 'review.html';
+            });
+        
+
+            
+        
+    
+            marker_fc08e65620b752759b868428d56a53da.bindTooltip(
+                `<div>
+                     Irving K. Barber Learning Centre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_99e1aa910a737ab12422627de7ec041d = L.marker(
+                [49.264822, -123.246848],
+                {}
+            ).addTo(map_28a4e38f6317946f9c785be34ddd1e4d);
+
+            marker_99e1aa910a737ab12422627de7ec041d.on('click', function() {
+                window.location.href = 'review.html';
+            });
+        
+    
+            marker_99e1aa910a737ab12422627de7ec041d.bindTooltip(
+                `<div>
+                     P. A. Woodward Instructional Resources Centre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7e43910a5cdb0056de92d7784d0d691f = L.marker(
+                [49.267434, -123.250062],
+                {}
+            ).addTo(map_28a4e38f6317946f9c785be34ddd1e4d);
+
+            marker_7e43910a5cdb0056de92d7784d0d691f.on('click', function() {
+                window.location.href = 'review.html';
+            });
+        
+    
+            marker_7e43910a5cdb0056de92d7784d0d691f.bindTooltip(
+                `<div>
+                     UBC Life Building
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a4b73e651276f10551aa0fe275e6d5a8 = L.marker(
+                [49.26657, -123.249807],
+                {}
+            ).addTo(map_28a4e38f6317946f9c785be34ddd1e4d);
+
+            marker_a4b73e651276f10551aa0fe275e6d5a8.on('click', function() {
+                window.location.href = 'review.html';
+            });
+        
+    
+            marker_a4b73e651276f10551aa0fe275e6d5a8.bindTooltip(
+                `<div>
+                     AMS Student Nest
+                 </div>`,
+                {"sticky": true}
+            );
+            marker_a4b73e651276f10551aa0fe275e6d5a8.on('click', function() {
+                window.location.href = 'review.html';
+            });
+
+        
+    
+            var marker_9503be06c39e81f66f0704bb24fb184c = L.marker(
+                [49.260461, -123.251332],
+                {}
+            ).addTo(map_28a4e38f6317946f9c785be34ddd1e4d);
+
+            marker_9503be06c39e81f66f0704bb24fb184c.on('click', function() {
+                window.location.href = 'review.html';
+            });
+        
+    
+            marker_9503be06c39e81f66f0704bb24fb184c.bindTooltip(
+                `<div>
+                     Orchard Commons - Vantage College, Bartlett/Braeburn House
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
