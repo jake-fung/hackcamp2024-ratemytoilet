@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Your Rating</title>
+    <link rel="stylesheet" href="reviewpagestyles.css" />
+</head>
+<body>
+    <div class="reviewpage">
+        <h1>Add Your Rating</h1>
+        <p>Please enter your rating to the toilet out of 5</p>
+        
+        <!-- Background image for the form -->
+        <img src="Images/AddRate.png" alt="Add Your Toilet" class="add-rate-image">
+        
+        <!-- Overlaying form on top of the image -->
+        <div class="input-overlay">
+            <form action="submit_rating.py" method="post">
+                <div class="form-group">
+                    <label for="overall-rating">Overall Rating</label>
+                    <input type="text" id="overall-rating" name="overall_rating" placeholder="Enter overall rating (1-5)" required>
+                </div>
+                <div class="form-group">
+                    <label for="cleanliness">Cleanliness</label>
+                    <input type="text" id="cleanliness" name="cleanliness" placeholder="Enter cleanliness rating (1-5)" required>
+                </div>
+                <div class="form-group">
+                    <label for="capacity">Capacity</label>
+                    <input type="text" id="capacity" name="capacity" placeholder="Enter capacity rating (1-5)" required>
+                </div>
+                <div class="form-group">
+                    <label for="accessibility">Accessibility</label>
+                    <input type="text" id="accessibility" name="accessibility" placeholder="Enter accessibility rating (1-5)" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comment</label>
+                    <textarea id="comment" name="comment" placeholder="Enter your comments"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+
+        <div class="tab-bar">
+            <div class="icon-container" onclick="window.location.href='homepage.html'">
+              <img class="img" src="assets/images/home-icon.svg" />
+            </div>
+            <div class="icon-container" onclick="window.location.href='rankpage.html'">
+              <img class="img" src="assets/images/ranking-icon.svg" />
+            </div>
+            <div class="icon-container">
+              <img class="img" src="assets/images/profile-icon.svg" />
+            </div>
+          </div>
+
+    </div>
+</body>
+</html>

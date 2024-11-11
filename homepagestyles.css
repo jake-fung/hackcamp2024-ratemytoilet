@@ -7,7 +7,7 @@
   height: 809.81px;
 }
 
-.homepage .tab-bar {
+.tab-bar {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -17,25 +17,25 @@
   background-color: #ffffff;
 }
 
-.homepage .icon-container {
+.icon-container {
   position: relative;
   width: 75.39px;
   height: 50.26px;
 }
 
-.homepage .icon {
-  position: relative;
-  width: 22px;
-  height: 24px;
-  top: 11px;
-  left: 26px;
-  background-size: 100% 100%;
-}
-
-.homepage .img {
+.img {
   position: absolute;
   width: 24px;
   height: 24px;
   top: 10px;
   left: 25px;
+}
+
+#map_0c228f3feaa5777b55a562c74ec87071 {
+  position: middle;
+  width: 387px;
+  height: 736px;
+}
+.leaflet-container {
+  font-size: 1rem;
 }

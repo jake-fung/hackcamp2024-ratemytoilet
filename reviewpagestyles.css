@@ -1,0 +1,82 @@
+.body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 387px;
+    height: 809.81px;
+}
+.add-rate-image {
+    width: 387px;
+    margin-top: 20px;
+    position: relative;
+}
+.input-overlay {
+    position: absolute;
+    top: 30%; /* Move inputs lower by adjusting this value */
+    width: 387px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    width: 387px;;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+input[type="text"], textarea {
+    width: 387px;;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+textarea {
+    height: 60px;
+    resize: vertical;
+}
+.submit-button {
+    width: 387px;;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+.tab-bar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    top: 736px;
+    gap: 76.39px;
+    padding: 14.07px 4.02px;
+    position: relative;
+    background-color: #ffffff;
+  }
+
+  .icon-container {
+    position: relative;
+    width: 75.39px;
+    height: 50.26px;
+  }
+  
+  .img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 10px;
+    left: 25px;
+  }

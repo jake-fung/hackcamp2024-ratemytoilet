@@ -1,0 +1,71 @@
+  .rankpage {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 387px;
+  }
+  
+  .rankpage .bg-color {
+    position: absolute;
+    width: 387px;
+    height: 736px;
+    top: 1px;
+    left: 0;
+    background-color: #ffffff;
+  }
+  .rankpage .title {
+    position: absolute;
+    width: 387px;
+    height: 90px;
+    align-content: center;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 10px;
+    line-height: normal;
+  }
+  .rankpage .numbers {
+    display: flex;
+    flex-direction: column;
+    width: 68px;
+    height: 610px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    position: absolute;
+    top: 101px;
+    left: 12px;
+  }
+  .rankpage .number-img {
+    position: relative;
+    width: 64px;
+    height: 64px;
+  }
+  
+  .tab-bar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    top: 736px;
+    gap: 76.39px;
+    padding: 14.07px 4.02px;
+    position: relative;
+    background-color: #ffffff;
+  }
+
+  .icon-container {
+    position: relative;
+    width: 75.39px;
+    height: 50.26px;
+  }
+  
+  .img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 10px;
+    left: 25px;
+  }
